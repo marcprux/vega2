@@ -100,6 +100,7 @@ parseData.schema = {
               },
               "additionalProperties": false
             }, {
+              "required": ["type"],
               "properties": {
                 "type": {"enum": ["csv", "tsv"]},
                 "parse": parseDef
@@ -120,6 +121,7 @@ parseData.schema = {
                 "additionalProperties": false
               }]
             }, {
+              "required": ["type"],
               "properties": {
                 "type": {"enum": ["treejson"]},
                 "children": {"type": "string"},
